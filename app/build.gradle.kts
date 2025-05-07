@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.23" // Or your project's Kotlin version
 }
 
 android {
@@ -56,4 +57,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.kotlinxSerializationConverter)
+    implementation(libs.kotlinx.serializationJson)
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.lifecycle.viewmodelCompose)
 }

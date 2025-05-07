@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Amphibians</string>
+    <string name="loading_amphibians">Loading amphibians…</string>
+    <string name="loading_failed">Failed to load amphibians.</string>
+    <string name="retry_button">Retry</string>
+    <string name="no_amphibians_found">No amphibians found. Check your connection or try again.</string>
+    <string name="amphibian_image_description">Image of %1$s</string>
 </resources>
+
